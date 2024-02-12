@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-bg: #f8f8f8;
+    --box-bg: #ffffff;
+    --name-color: #232323;
+    --card-bg-color: #343434;
+}
+
+.dark:root {
+    --main-bg: #131313;
+    --box-bg: #232323;
+    --name-color: #f8f8f8;
+    --card-bg-text: #ffffff;
+}
+
+
+
+
+.mode-switch {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    color: var(--name-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mode-switch .active .moon {
+    fill: var(--name-color);
+}
