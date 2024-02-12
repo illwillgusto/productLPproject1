@@ -121,6 +121,37 @@ img {
     opacity: 1;
 }
 
+.container .box .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    border-radius: 50%;
+    height: 200px;
+    transition: 0.5s;
+    background: #ffffff;
+    transform-style: preserve-3d;
+    z-index: 10;
+    opacity: 1;
+    transform: translate3d(-50%, -50%, 35px);
+}
+
+.container .box:hover .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    border-radius: 50%;
+    height: 200px;
+    transition: 0.5s;
+    background: #ffffff;
+    transform-style: preserve-3d;
+    z-index: 10;
+    opacity: 1;
+    transform: translate3d(-50%, -50%, 35px);
+}
+
+
 .mode-switch {
     background-color: transparent;
     border: none;
