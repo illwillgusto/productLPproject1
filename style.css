@@ -49,6 +49,38 @@ img {
     transform-style: preserve-3d;
 }
 
+.container .box::before {
+    content: "YOURS";
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 6em;
+    font-weight: 900;
+    color: var(--card-bg-text);
+    font-style: italic;
+    opacity: 0;
+    transition: 0.5s;
+
+}
+
+.container .box::after {
+    content: "Juicing For You";
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 4.5em;
+    font-weight: 900;
+    color: var(--card-bg-text);
+    font-style: italic;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.container .box:hover::after,
+.container .box:hover::before {
+    opacity: 0.04;
+}
+
 .mode-switch {
     background-color: transparent;
     border: none;
