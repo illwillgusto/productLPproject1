@@ -81,6 +81,46 @@ img {
     opacity: 0.04;
 }
 
+.container .box .name {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: var(--name-color);
+    width: 100%;
+    transform-style: preserve-3d;
+    transform: translate3d(0, 0, 75px);
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+
+.container .box:hover .name {
+    top: 40px;
+    opacity: 1;
+}
+
+.container .box .order {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform: translate3d(0, 0, 75px);
+    color: #ffffff;
+    background: #333;
+    padding: 10px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+
+.container .box:hover .order {
+    bottom: 30px;
+    opacity: 1;
+}
+
 .mode-switch {
     background-color: transparent;
     border: none;
