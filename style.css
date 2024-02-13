@@ -17,6 +17,7 @@
    --name-color: #f8f8f8;
    --card-bg-text: #ffffff;
  }
+
  body {
     background: var(--main-bg);
  }
@@ -36,6 +37,11 @@
    align-items: center;
    min-height: 100vh;
    background: var(--main-bg);
+ }
+
+ .header,
+ .title {
+    margin-top: 50px;
  }
  
  .container {
@@ -202,4 +208,17 @@
  
  .mode-switch.active .moon {
    fill: var(--name-color);
+ }
+
+ footer {
+    padding: 0.2rem;
+	position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
  }
