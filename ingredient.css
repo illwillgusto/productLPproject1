@@ -17,7 +17,6 @@ a.nav-item:hover {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: var(--main-bg);
   }
 
 .container {
@@ -26,7 +25,9 @@ a.nav-item:hover {
    justify-content: center;
    align-items: center;
    flex-wrap: wrap;
-   width: 1200px;
+   max-width: 1200px;
+   width: 100%;
+
  }
 
  .container .box {
@@ -49,10 +50,9 @@ a.nav-item:hover {
     width: 390px;
     height: 554px;
     perspective: 1000px;
-    margin-top: 15%;
+    margin: 2% auto;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     justify-content: center;
   }
   
@@ -172,3 +172,20 @@ a.nav-item:hover {
     }
   }
 
+  @media (max-width: 600px) {
+    .container {
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+    }
+
+    .container .box {
+        width: 100%;
+        align-items: center;
+    }
+
+    .myCard {
+        width: 80%;
+        margin: 10px auto;
+    }
+  }    
