@@ -57,7 +57,7 @@ a.nav-item:hover {
   }
   
   .title {
-    font-size: 1.5em;
+    font-size: 46px;
     font-weight: 900;
     text-align: center;
     margin: 0;
@@ -80,7 +80,9 @@ a.nav-item:hover {
   .frontSide1,
   .frontSide2,
   .frontSide3,
-  .backSide {
+  .backSide1,
+  .backSide2,
+  .backSide3 {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -112,17 +114,33 @@ a.nav-item:hover {
     background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
   }
   
-  .backSide,
-  .backSide::before {
-    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  .backSide1,
+  .backSide1::before {
+    background-image: linear-gradient(160deg, #00e990 0%, #80D0C7 100%);
   }
   
-  .backSide {
+  .backSide2,
+  .backSide2::before {
+    background-image: linear-gradient(160deg, #691725 0%, #ba4eda 100%);
+  }
+
+  .backSide3,
+  .backSide3::before {
+    background-image: linear-gradient(160deg, #ff6200 0%, #fff700 100%);
+  }
+  
+  .backSide1,
+  .backSide2,
+  .backSide3 {
     transform: rotateY(180deg);
   }
   
-  .frontSide::before,
-  .backSide::before {
+  .frontSide1::before,
+  .frontSide2::before,
+  .frontSide3::before,
+  .backSide1::before,
+  .backSide2::before,
+  .backSide3::before {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
