@@ -38,7 +38,13 @@ a.nav-item:hover {
    width: 1200px;
  }
 
-.myCard {
+ li {
+    font-size: 24px;
+    text-decoration: none;
+    list-style-type: none;
+ }
+
+ .myCard {
     background-color: transparent;
     width: 390px;
     height: 554px;
@@ -71,7 +77,9 @@ a.nav-item:hover {
     transform: rotateY(180deg);
   }
   
-  .frontSide,
+  .frontSide1,
+  .frontSide2,
+  .frontSide3,
   .backSide {
     position: absolute;
     display: flex;
@@ -89,9 +97,19 @@ a.nav-item:hover {
     font-weight: 700;
   }
   
-  .frontSide,
-  .frontSide::before {
-    background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%);
+  .frontSide1,
+  .frontSide1::before {
+    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+  }
+
+  .frontSide2,
+  .frontSide2::before {
+    background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+  }
+
+  .frontSide3,
+  .frontSide3::before {
+    background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
   }
   
   .backSide,
