@@ -153,6 +153,10 @@ a.nav-item:hover {
     filter: blur(20px);
     animation: animate 5s linear infinite;
   }
+
+  .flip {
+    transform: rotateY(180deg);
+  }
   
   @keyframes animate {
     0% {
@@ -165,5 +169,13 @@ a.nav-item:hover {
   
     100% {
       opacity: 0.3;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .myCard {
+        width: 90%;
+        height: auto;
+        margin-top: 10%;
     }
   }
