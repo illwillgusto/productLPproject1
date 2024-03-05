@@ -80,9 +80,11 @@ a.nav-item:hover {
   .frontSide1,
   .frontSide2,
   .frontSide3,
+  .frontSide4,
   .backSide1,
   .backSide2,
-  .backSide3 {
+  .backSide3,
+  .backSide4 {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -113,6 +115,11 @@ a.nav-item:hover {
   .frontSide3::before {
     background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
   }
+
+  .frontSide4,
+  .frontSide4::before {
+    background-image: linear-gradient(to right, #b9bc09 0%, #e6e03b 100%);
+  }
   
   .backSide1,
   .backSide1::before {
@@ -128,19 +135,27 @@ a.nav-item:hover {
   .backSide3::before {
     background-image: linear-gradient(160deg, #ff6200 0%, #fff700 100%);
   }
+
+  .backSide4,
+  .backSide4::before {
+    background-image: linear-gradient(160deg, #fbff00 0%, #e6e03b 100%);
+  }
   
   .backSide1,
   .backSide2,
-  .backSide3 {
+  .backSide3,
+  .backside4 {
     transform: rotateY(180deg);
   }
   
   .frontSide1::before,
   .frontSide2::before,
   .frontSide3::before,
+  .frontSide4::before,
   .backSide1::before,
   .backSide2::before,
-  .backSide3::before {
+  .backSide3::before,
+  .backSide4::before {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
