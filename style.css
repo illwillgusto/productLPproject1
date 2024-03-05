@@ -195,6 +195,11 @@
  .container .box:nth-child(3) .order {
    background: #f08101;
  }
+
+ .container .box:nth-child(4) .circle,
+ .container .box:nth-child(4) .order {
+  background: yellow;
+ }
  
  .mode-switch {
    background-color: transparent;
