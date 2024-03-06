@@ -134,7 +134,27 @@
    bottom: -5px;
    opacity: 1;
  }
- 
+
+ .container .box .second-order {
+  position: absolute;
+  bottom: -40px; 
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  background: #555; 
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.5s;
+  opacity: 0;
+  z-index: 10;
+}
+
+.container .box:hover .second-order {
+  opacity: 1;
+  bottom: -35px;
+}
+
  .container .box .circle {
    position: absolute;
    top: 50%;
@@ -198,7 +218,7 @@
 
  .container .box:nth-child(4) .circle,
  .container .box:nth-child(4) .order {
-  background: yellow;
+  background: rgb(228, 228, 18);
  }
  
  .mode-switch {
