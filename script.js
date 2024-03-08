@@ -7,8 +7,9 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-document.querySelectorAll('.container .box').forEach(box => {
-    box.querySelector('.name').addEventListener('click', () => {
-        box.classList.toggle('flipped');
+
+document.querySelectorAll('.container .box .ingredients').forEach(ingredients => {
+    ingredients.addEventListener('click', () => {
+        ingredients.parentElement.classList.toggle('flipped');
     });
 });
