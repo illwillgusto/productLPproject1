@@ -52,6 +52,7 @@
    flex-wrap: wrap;
    width: 1200px;
    transform-style: preserve-3d;
+   transition: transform 0.5s;
  }
  
  .container .box {
@@ -62,6 +63,26 @@
    background: var(--box-bg);
    border-radius: 20px;
    transform-style: preserve-3d;
+   transition: transform 0.5s;
+ }
+
+ .container .box .ingredients {
+  position: absolute;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+ }
+
+ .container .box .product, .container .box .name, .container .box .order, .container .box .second-order {
+    backface-visibility: hidden;
+ }
+
+ .container .box.flipped {
+  transform: rotateY(180deg);
  }
  
  .container .box::before {

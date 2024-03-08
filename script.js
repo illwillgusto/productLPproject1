@@ -5,4 +5,10 @@ document.addEventListener('DOMContentLoaded', function () {
     document.documentElement.classList.toggle('dark');
         modeSwitch.classList.toggle('active');
     });
-})();
+});
+
+document.querySelectorAll('.container .box').forEach(box => {
+    box.querySelector('.name').addEventListener('click', () => {
+        box.classList.toggle('flipped');
+    });
+});
